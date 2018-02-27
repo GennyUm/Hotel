@@ -1,0 +1,53 @@
+/* CSS Property (variables) */
+:root {
+	--color-primary: #EB2F64;
+	--color-primary-light: #FF3366;
+	--color-primary-dark: #BA265D;
+
+	--color-grey-light-1: #faf9f9;
+	--color-grey-light-2: #f4f2f2;
+	--color-grey-light-3: #f0eeee;
+	--color-grey-light-4: #ccc;
+
+	--color-grey-dark-1: #333;
+	--color-grey-dark-2: #777;
+	--color-grey-dark-3: #999;
+
+	--break-line: 1px solid var(--color-grey-light-3);
+}
+
+/* Sass variables (MEDIA QUERIES) */
+$bp-1200: 75em; // 1200px / 16px = 75em
+$bp-1100: 68.75em; // 1100px / 16px = 68.75em
+$bp-980: 61.25em; // 980px / 16px = 61.25em
+$bp-720: 45em; // 720px / 16px = 45em
+$bp-540: 33.75em; // 540px / 16px = 33.75em
+$bp-400: 25em; // 400px / 16px = 25em
+
+/* Based Style Config */
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+*,
+*:before,
+*:after {
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	color: var(--color-grey-dark-2);
+	background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+	background-size: cover;
+	background-repeat: no-repeat;
+}
